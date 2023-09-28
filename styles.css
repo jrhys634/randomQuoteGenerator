@@ -1,0 +1,82 @@
+/* Resets */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200&display=swap');
+
+/* Background Styling */
+body {
+    background-image: url(/pexels-vincent-gerbouin-1174732.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0 auto;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+
+/* Container Positioning */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10rem;
+    font-family: 'Karla', sans-serif;;
+}
+
+/* Button Styling */
+#quote__bttn {
+    align-self: center;
+    z-index: 2;
+    border-radius: 50px;
+    border: 0px;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    padding: 0.7rem 2rem;
+}
+
+/* H1 Styling */
+.quote__title {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+    z-index: 1;
+}
+
+/* P Styling */
+#quote {
+    font-size: 2rem;
+    margin-top: 5rem;
+    color: white;
+    z-index: 1;
+    font-family: 'Karla', sans-serif;
+    max-width: 60ch;
+    letter-spacing: -0.04rem;
+    font-style: italic;
+    font-weight: lighter;
+}
